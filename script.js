@@ -1,7 +1,7 @@
 let data = [];
 
-const audioSuccess = new Audio('success.mp3');
-const audioFail = new Audio('fail.mp3');
+const audioSuccess = new Audio('');
+const audioFail = new Audio('');
 
 fetch('kelulusan.json')
   .then(response => response.json())
