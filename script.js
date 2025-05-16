@@ -1,7 +1,7 @@
 let data = [];
 
-const audioSuccess = new Audio('assets/success.mp3');
-const audioFail = new Audio('assets/fail.mp3');
+const audioSuccess = new Audio('success.mp3');
+const audioFail = new Audio('fail.mp3');
 
 fetch('kelulusan.json')
   .then(response => response.json())
@@ -50,7 +50,7 @@ function cekKelulusan() {
     hasilDiv.innerHTML = `<div class="mini-card">${isiMiniCard}</div>`;
   } else {
     hasilDiv.innerHTML = `
-      <div class="mini-card fail">
+      <div class="fail">
         <i class="fas fa-times-circle"></i> NISN atau Password salah.
       </div>
     `;
